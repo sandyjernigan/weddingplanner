@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+@import 'header';
+
+body {
+  .flex(none, center, column);
+  background-color: @background-color;
+  color: @color-base;
+  font-family: @bodyFont;
+}
+
+@import 'carousel';

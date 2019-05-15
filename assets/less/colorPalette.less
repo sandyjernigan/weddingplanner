@@ -1,0 +1,93 @@
+// Variables
+@color: steelblue; // You may also use RGB Colors
+@palette: mono; // No effect for now!
+
+// Primary
+@primary-1: @color;
+@primary-2: lighten(@color, 15%);
+@primary-3: lighten(@color, 25%);
+@primary-4: darken(@color, 15%);
+@primary-5: darken(@color, 25%);
+
+// Still Playing with this file
+
+.palette (@color) /*when (@palette = complement)*/ {
+  .complement-1 {
+    background-color: spin(@color, 120);
+    color: contrast(spin(@color, 120), #333, #fff, 60%);
+  }
+
+  .complement-2 {
+    background-color: lighten(spin(@color, 120), 15%);
+    color: contrast(lighten(spin(@color, 120), 15%), #333, #fff, 60%);
+  }
+
+  .complement-3 {
+    background-color: lighten(spin(@color, 120), 25%);
+    color: contrast(lighten(spin(@color, 120), 25%), #333, #fff, 60%);
+  }
+
+  .complement-4 {
+    background-color: darken(spin(@color, 120), 15%);
+    color: contrast(darken(spin(@color, 120), 15%), #333, #fff, 60%);
+  }
+
+  .complement-5 {
+    background-color: darken(spin(@color, 120), 25%);
+    color: contrast(darken(spin(@color, 120), 25%), #333, #fff, 60%);
+  }
+}
+
+.palette (@color) /*when (@palette = triad)*/ {
+  .secondary-1 {
+    background-color: spin(@color, 180);
+    color: contrast(spin(@color, 180), #333, #fff, 60%);
+  }
+
+  .secondary-2 {
+    background-color: lighten(spin(@color, 180), 15%);
+    color: contrast(lighten(spin(@color, 180), 15%), #333, #fff, 60%);
+  }
+
+  .secondary-3 {
+    background-color: lighten(spin(@color, 180), 25%);
+    color: contrast(lighten(spin(@color, 180), 25%), #333, #fff, 60%);
+  }
+
+  .secondary-4 {
+    background-color: darken(spin(@color, 180), 15%);
+    color: contrast(darken(spin(@color, 180), 15%), #333, #fff, 60%);
+  }
+
+  .secondary-5 {
+    background-color: darken(spin(@color, 180), 25%);
+    color: contrast(darken(spin(@color, 180), 25%), #333, #fff, 60%);
+  }
+
+  .tertiary-1 {
+    background-color: spin(@color, 80);
+    color: contrast(spin(@color, 80), #333, #fff, 60%);
+  }
+
+  .tertiary-2 {
+    background-color: lighten(spin(@color, 80), 15%);
+    color: contrast(lighten(spin(@color, 80), 15%), #333, #fff, 60%);
+  }
+
+  .tertiary-3 {
+    background-color: lighten(spin(@color, 80), 25%);
+    color: contrast(lighten(spin(@color, 80), 25%), #333, #fff, 60%);
+  }
+
+  .tertiary-4 {
+    background-color: darken(spin(@color, 80), 15%);
+    color: contrast(darken(spin(@color, 80), 15%), #333, #fff, 60%);
+  }
+
+  .tertiary-5 {
+    background-color: darken(spin(@color, 80), 25%);
+    color: contrast(darken(spin(@color, 80), 25%), #333, #fff, 60%);
+  }
+}
+
+.palette (@color);

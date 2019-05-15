@@ -1,0 +1,21 @@
+// Mixins
+.flex(@justifycontent: none, @alignitems: none, @flexdirection: row) {
+  display: flex;
+  justify-content: @justifycontent;
+  align-items: @alignitems;
+  flex-direction: @flexdirection;
+}
+
+// btn(@button-bg, @textColor, @shadowColor, @width, @height, @fontsize)
+.btn(@button-bg, @textColor: @textColor, @shadowColor: @shadowColor, @width: 240px, @height: 60px, @fontsize: 1.8rem) {
+  color: @textColor;
+  width: @width;
+  height: @height;
+  line-height: @height;
+  font-size: @fontsize;
+  text-align: center;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px @shadowColor;
+  background-color: @button-bg;
+}
