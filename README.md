@@ -1,8 +1,9 @@
-# Wedding Planner Portfolio
+## Wedding Planner Portfolio
 
-Pitch: As a wedding planner I want to be able to show off my work. I have a lot of amazing pics from the weddings i’ve planned I'd like to share with potential clients, but I need a site that is more professional than Instagram in order to do so. I don’t have time or skills to build my own unique website, I need a site that provides templates so I can just input some information and be done. 
+# Pitch: 
+As a wedding planner I want to be able to show off my work. I have a lot of amazing pics from the weddings i’ve planned I'd like to share with potential clients, but I need a site that is more professional than Instagram in order to do so. I don’t have time or skills to build my own unique website, I need a site that provides templates so I can just input some information and be done. 
 
-MVP Features Breakdown:
+## MVP Features Breakdown:
 
 This app contains two user types. A wedding planner (who has the ability to log in) and a single user (no need to log in so no need for user data to be persisted on this user type) who can view portfolios. 
 *Onboarding process for wedding planner. Include their location and contact info for people to reach them. 
