@@ -285,8 +285,8 @@ body {
   justify-content: none;
   align-items: center;
   flex-direction: column;
-  background-color: ghostwhite;
-  color: steelblue;
+  background-color: Ivory;
+  color: DarkSlateBlue;
   font-family: 'Roboto Slab', serif;
 }
 .carousel {
@@ -305,8 +305,8 @@ body {
   justify-content: center;
   align-items: none;
   flex-direction: row;
-  color: ghostwhite;
-  background-color: steelblue;
+  color: Ivory;
+  background-color: DarkSlateBlue;
   font-size: 40px;
   border-radius: 50%;
   position: absolute;
@@ -315,9 +315,9 @@ body {
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
-  color: steelblue;
-  background-color: ghostwhite;
-  border: 2px solid steelblue;
+  color: DarkSlateBlue;
+  background-color: Ivory;
+  border: 2px solid DarkSlateBlue;
 }
 .carousel .left-button {
   top: 50%;
