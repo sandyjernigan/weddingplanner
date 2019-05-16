@@ -17,7 +17,8 @@ class Carousel {
 
 // Reference to the carousel
 let carousel = document.querySelector(`.carousel`);
-console.log(carousel);
+console.log(window.innerHeight);
+carousel.style.height = window.innerHeight;
 
 // Reference to the images
 const carouselImages = document.querySelectorAll(`.carousel img`).forEach( img => new Carousel(img));

@@ -294,10 +294,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 400px;
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 0;
   width: 100%;
 }
 .carousel .left-button,
