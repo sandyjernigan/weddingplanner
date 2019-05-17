@@ -294,9 +294,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  height: 100vh;
   position: absolute;
   overflow: hidden;
-  margin-top: 0;
+  top: 0;
   width: 100%;
 }
 .carousel .left-button,
@@ -332,4 +333,8 @@ body {
 .carousel img {
   width: 100%;
   display: none;
+}
+.wrapper {
+  position: relative;
+  top: 0;
 }
