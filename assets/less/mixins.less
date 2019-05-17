@@ -1,9 +1,18 @@
 // Mixins
-.flex(@justifycontent: none, @alignitems: none, @flexdirection: row) {
+.flex(@justify: flex-start, @align: stretch, @direction: row, @wrap: nowrap) {
   display: flex;
-  justify-content: @justifycontent;
-  align-items: @alignitems;
-  flex-direction: @flexdirection;
+  justify-content: @justify; // default is flex-start | flex-end | center | space-between | space-around | space-evenly
+  align-items: @align; // default is stretch | flex-start | flex-end | center | baseline
+  flex-direction: @direction; // default is row | row-reverse | column | column-reverse
+  flex-wrap: @wrap; // default is nowrap | wrap | wrap-reverse
+  // flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+}
+
+.flexchild(@child: 0, @order: 0, @align: auto) {
+  flex: @child; // (flex-shrink and flex-basis) are optional. Default is 0 1 auto
+  // flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] 
+  order: @order; // default is 0 | <integer>
+  align-self: @align; // default is auto | flex-start | flex-end | center | baseline | stretch;  
 }
 
 // btn(@button-bg, @textColor, @shadowColor, @width, @height, @fontsize)
