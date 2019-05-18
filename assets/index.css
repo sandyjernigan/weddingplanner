@@ -380,12 +380,6 @@ header nav a {
   margin: 20px;
   color: #5F3E6C;
   font-weight: bold;
-  -webkit-filter: drop-shadow(1px 1px 0 #300030) drop-shadow(-1px -1px 0 #300030);
-  filter: drop-shadow(1px 1px 0 #300030) drop-shadow(-1px -1px 0 #300030);
-}
-header img {
-  -webkit-filter: drop-shadow(1px 1px 0 #300030) drop-shadow(-1px -1px 0 #300030);
-  filter: drop-shadow(1px 1px 0 #300030) drop-shadow(-1px -1px 0 #300030);
 }
 .navbarBG {
   height: 130px;
