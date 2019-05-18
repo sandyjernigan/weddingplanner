@@ -2,7 +2,8 @@
 
 // Reference to the carousel
 let carousel = document.querySelector(`.carousel`);
-carousel.style.height = window.innerHeight;
+// carousel.style.height = window.innerHeight;
+console.log(window.innerHeight + " x " + window.innerWidth);
 
 // Reference to the images - Array
 const carouselImg = Array.from(document.querySelectorAll(`.carousel img`));

@@ -1,7 +1,7 @@
 .carousel {
-  .flex(center, center);
-  width: 100%;
+  .flex(center, flex-start);
   height: 100vh;
+  width: 100%;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -16,6 +16,7 @@
     font-size: 40px;
     border-radius: 50%;
     position: absolute;
+    z-index: 99;
     width: 60px;
     height: 60px;
     &:hover {
@@ -37,6 +38,7 @@
   img {
     width: 100%;
     display: none;
+    top: 0;
   }
   .show {
     display: flex;
