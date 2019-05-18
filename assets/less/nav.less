@@ -1,22 +1,25 @@
 header {
-    .flex(center);
+    .flex(center, flex-start);
     width: 100%;
 
     nav {
-        .flex(space-between);
+        .flex(space-between, center);
         width: 100%;
+        // height: 130px;
         padding-top: 5px;
-        text-shadow: 1px 1px 5px @color-bg;
+        // text-shadow: 1px 1px 5px @color-bg;
         color: @color-base;
+        font-weight: bold;
         // flex: 1 100%; /* We tell all items to be 100% width, via flex-basis */
 
-        // .navbar {
-        //     .flex(space-between);
-        // } 
+        .navbar {
+            .flex(space-between, center);
+        } 
 
         a {
             margin: 20px;
             color: @color-base;
+            font-weight: bold;
         }
     }
 }

@@ -311,9 +311,6 @@ a {
   overflow: hidden;
   top: 0;
   width: 100%;
-  filter: sepia(75%);
-  -webkit-filter: sepia(75%);
-  -moz-filter: sepia(75%);
 }
 .carousel .left-button,
 .carousel .right-button {
@@ -356,7 +353,7 @@ a {
 header {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
@@ -364,17 +361,25 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
   padding-top: 5px;
-  text-shadow: 1px 1px 5px AntiqueWhite;
   color: DarkSlateBlue;
+  font-weight: bold;
+}
+header nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 header nav a {
   margin: 20px;
   color: DarkSlateBlue;
+  font-weight: bold;
 }
 .navbarBG {
   height: 130px;
