@@ -306,11 +306,11 @@ a {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 100%;
   height: 100vh;
   position: absolute;
   overflow: hidden;
   top: 0;
-  width: 100%;
 }
 .carousel .left-button,
 .carousel .right-button {
