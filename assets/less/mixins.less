@@ -28,3 +28,18 @@
   box-shadow: 4px 4px 2px @shadowColor;
   background-color: @button-bg;
 }
+
+// Shadow Outline
+.shadow-outline(@color: @color-bg, @horizontal: 1px, @vertical: 1px, @blur: 0) {
+  -webkit-filter: drop-shadow(@arguments) 
+                  drop-shadow(-(@horizontal) -(@vertical) @blur @color);
+  filter:         drop-shadow(@arguments) 
+                  drop-shadow(-(@horizontal) -(@vertical) @blur @color);
+}
+
+//Box Shadow
+.box-shadow(@x: 0; @y: 0; @blur: 1px; @color: #000) {
+  -webkit-box-shadow: @arguments;
+     -moz-box-shadow: @arguments;
+          box-shadow: @arguments;
+}
