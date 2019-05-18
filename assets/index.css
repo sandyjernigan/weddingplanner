@@ -287,7 +287,7 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   background-color: AntiqueWhite;
-  color: DarkSlateBlue;
+  color: #5F3E6C;
   font-family: 'Roboto Slab', serif;
 }
 .wrapper {
@@ -297,7 +297,7 @@ body {
   top: 0;
 }
 a {
-  color: DarkSlateBlue;
+  color: #5F3E6C;
   text-decoration: none;
 }
 .carousel {
@@ -320,7 +320,7 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   color: AntiqueWhite;
-  background-color: DarkSlateBlue;
+  background-color: #5F3E6C;
   font-size: 40px;
   border-radius: 50%;
   position: absolute;
@@ -329,9 +329,9 @@ a {
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
-  color: DarkSlateBlue;
+  color: #5F3E6C;
   background-color: AntiqueWhite;
-  border: 2px solid DarkSlateBlue;
+  border: 2px solid #5F3E6C;
 }
 .carousel .left-button {
   top: 50%;
@@ -366,7 +366,7 @@ header nav {
   flex-wrap: nowrap;
   width: 100%;
   padding-top: 5px;
-  color: DarkSlateBlue;
+  color: #5F3E6C;
   font-weight: bold;
 }
 header nav .navbar {
@@ -378,8 +378,14 @@ header nav .navbar {
 }
 header nav a {
   margin: 20px;
-  color: DarkSlateBlue;
+  color: #5F3E6C;
   font-weight: bold;
+  -webkit-filter: drop-shadow(1px 1px 0 #300030) drop-shadow(-1px -1px 0 #300030);
+  filter: drop-shadow(1px 1px 0 #300030) drop-shadow(-1px -1px 0 #300030);
+}
+header img {
+  -webkit-filter: drop-shadow(1px 1px 0 #300030) drop-shadow(-1px -1px 0 #300030);
+  filter: drop-shadow(1px 1px 0 #300030) drop-shadow(-1px -1px 0 #300030);
 }
 .navbarBG {
   height: 130px;
