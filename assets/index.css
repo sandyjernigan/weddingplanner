@@ -286,7 +286,7 @@ body {
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: Ivory;
+  background-color: AntiqueWhite;
   color: DarkSlateBlue;
   font-family: 'Roboto Slab', serif;
 }
@@ -322,7 +322,7 @@ a {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  color: Ivory;
+  color: AntiqueWhite;
   background-color: DarkSlateBlue;
   font-size: 40px;
   border-radius: 50%;
@@ -333,7 +333,7 @@ a {
 .carousel .left-button:hover,
 .carousel .right-button:hover {
   color: DarkSlateBlue;
-  background-color: Ivory;
+  background-color: AntiqueWhite;
   border: 2px solid DarkSlateBlue;
 }
 .carousel .left-button {
@@ -369,21 +369,21 @@ header nav {
   flex-wrap: nowrap;
   width: 100%;
   padding-top: 15px;
-  text-shadow: 1px 1px 5px DarkSlateBlue;
-  color: Ivory;
+  text-shadow: 1px 1px 5px AntiqueWhite;
+  color: DarkSlateBlue;
 }
 header nav a {
   margin: 20px;
-  color: Ivory;
+  color: DarkSlateBlue;
 }
 .navbarBG {
   height: 50px;
   width: 100%;
   position: absolute;
   top: 0;
-  background-color: DarkSlateBlue;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  background-color: AntiqueWhite;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
   /* For IE8 and earlier */
 }
 .homePage header {

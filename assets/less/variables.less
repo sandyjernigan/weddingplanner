@@ -14,7 +14,7 @@
 // Color Schemes
 @color-base: DarkSlateBlue;
 @color-light: SkyBlue;
-@background-color: Ivory;
+@color-bg: AntiqueWhite;
 
 
     // Complement
@@ -27,14 +27,14 @@
     // Mixing Colors
     @color-primary: mix(@color-base, red);
     @color-secondary: mix(@color-base, green);
-    @color-tertiary: mix(@color-base, @background-color);
+    @color-tertiary: mix(@color-base, @color-bg);
 
     // Shade Colors
     @color-lighten: lighten(@color-base, 10%);
     @color-lighter: lighten(@color-base, 20%);
     @color-darken: darken(@color-base, 10%);
     @color-darker: darken(@color-base, 20%);
-    @color-darker-bg: darken(@background-color, 20%);
+    @color-darker-bg: darken(@color-bg, 20%);
 
     // Saturation
     @color-saturate: saturate(@color-base, 10%);
