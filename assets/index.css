@@ -368,7 +368,7 @@ header nav {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  padding-top: 15px;
+  padding-top: 5px;
   text-shadow: 1px 1px 5px AntiqueWhite;
   color: DarkSlateBlue;
 }
@@ -377,7 +377,7 @@ header nav a {
   color: DarkSlateBlue;
 }
 .navbarBG {
-  height: 50px;
+  height: 130px;
   width: 100%;
   position: absolute;
   top: 0;
