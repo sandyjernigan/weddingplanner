@@ -1,22 +1,29 @@
 .homePage {
-    .flex(flex-start, stretch, row, wrap);
+    .flex(center, stretch, row, wrap);
     width: 100%;
-    //height: 100vh;
 
     .main {
         .flex(center, center);
+        .shadow-outline(white, 2px, 2px, 12px);
         font-weight: bold;
+        font-size: 1.8rem;
     }
     article {
         display: none;
+
+        header {
+            font-size: 2.4rem;
+            margin: 50px 0;
+        }
+    }
+    .show {
+      display: inline-block;
     }
     footer {
-        .shadow-outline(white, 2px, 2px, 12px);
         text-align: center;
         position: fixed;
         bottom: 50px;
         left: 50%;
         transform: translate(-50%, 0);
-        font-size: 1.8rem;
     }
 }

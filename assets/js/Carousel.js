@@ -9,9 +9,13 @@ const carouselImg = Array.from(document.querySelectorAll(`.carousel img`));
 // Reference to dots for which slide
 var dots = document.getElementsByClassName("dot");
 
+// Reference to the images - Array
+const carouselArticle = Array.from(document.querySelectorAll(`.homePage article`));
+
 // Current Index
 let carouselIndex = 0;
 carouselImg[carouselIndex].classList.add("show");
+carouselArticle[carouselIndex].classList.add("show");
 
 // Run Check View Window Size 
 checkViewPort();
@@ -33,6 +37,7 @@ const rightButton = document.querySelector(`.right-button`);
 function carouselChange(num) {
     // Turn off display on current image
     carouselImg[carouselIndex].classList.remove("show");
+    carouselArticle[carouselIndex].classList.remove("show");
     //dots[carouselIndex].classList.remove("show");
 
     // Update carouselIndex
@@ -45,6 +50,7 @@ function carouselChange(num) {
         if (carouselIndex < 0) { carouselIndex = carouselImg.length - 1 }
 
     carouselImg[carouselIndex].classList.add("show");
+    carouselArticle[carouselIndex].classList.add("show");
     //dots[carouselIndex].classList.add("show");
     checkViewPort();
 }
