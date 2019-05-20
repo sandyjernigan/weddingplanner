@@ -19,7 +19,12 @@ header {
         a {
             margin: 5px;
             color: @color-base;
-            font-weight: bold;            
+            font-weight: bold;
+            
+            .active {
+                // Action on class active
+                .shadow-outline(@color-lighten4, 1px, 1px, 1px); //@color-bg
+            }
         }
     }
     //  img {
