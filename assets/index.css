@@ -306,7 +306,6 @@ a {
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 100vh;
   width: 100%;
   position: absolute;
   overflow: hidden;
@@ -345,12 +344,21 @@ a {
   transform: translate(0, -50%);
 }
 .carousel img {
-  width: 100%;
   display: none;
   top: 0;
 }
 .carousel .show {
   display: flex;
+}
+.landscape {
+  height: 100vh;
+  width: 100%;
+}
+.landscape img {
+  width: 100%;
+}
+.portrait img {
+  height: 100vh;
 }
 header {
   display: flex;

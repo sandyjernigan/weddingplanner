@@ -1,6 +1,5 @@
 .carousel {
   .flex(center, flex-start);
-  height: 100vh;
   width: 100%;
   position: absolute;
   overflow: hidden;
@@ -36,11 +35,23 @@
     transform: translate(0, -50%);
   }  
   img {
-    width: 100%;
     display: none;
     top: 0;
   }
   .show {
     display: flex;
+  }
+}
+.landscape {
+  height: 100vh;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.portrait {
+  //height: 100%;
+  img {
+    height: 100vh;
   }
 }

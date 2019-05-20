@@ -2,8 +2,6 @@
 
 // Reference to the carousel
 let carousel = document.querySelector(`.carousel`);
-// carousel.style.height = window.innerHeight;
-console.log(window.innerHeight + " x " + window.innerWidth);
 
 // Reference to the images - Array
 const carouselImg = Array.from(document.querySelectorAll(`.carousel img`));
@@ -11,6 +9,11 @@ const carouselImg = Array.from(document.querySelectorAll(`.carousel img`));
 // Current Index
 let carouselIndex = 0;
 carouselImg[carouselIndex].classList.add("show");
+
+// Run Check View Window Size 
+checkViewPort();
+    // Recheck on resize event
+    window.addEventListener('resize', checkViewPort);
 
 // Left Button Reference
 let leftButton = document.querySelector(`.left-button`);
@@ -30,6 +33,7 @@ let leftButton = document.querySelector(`.left-button`);
             
         // Turn on display on next image
         carouselImg[carouselIndex].classList.add("show");
+        checkViewPort();
     });
 
 // Right Button Reference
@@ -50,4 +54,22 @@ const rightButton = document.querySelector(`.right-button`);
         
         // Turn on display on next image
         carouselImg[carouselIndex].classList.add("show");
-    });
+        checkViewPort();
+    });    
+
+function checkViewPort() {
+    
+    if (window.innerWidth / window.innerHeight < 1.5) {
+        carousel.classList.remove("landscape");
+        carousel.classList.add("portrait");
+        //carouselImg[carouselIndex].style.height = window.innerHeight;
+    } else {
+        carousel.classList.remove("portrait");
+        carousel.classList.add("landscape");
+    }
+
+    // Check Values
+    // console.log( window.innerWidth / window.innerHeight );
+    // console.log(carousel.classList);
+    // console.log(window.innerHeight);
+}
