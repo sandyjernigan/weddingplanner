@@ -352,7 +352,6 @@ a {
   display: inline-block;
 }
 .landscape {
-  height: 100vh;
   width: 100%;
 }
 .landscape img {
@@ -392,6 +391,9 @@ header nav a {
   margin: 5px;
   color: #5F3E6C;
   font-weight: bold;
+}
+header nav .active {
+  text-decoration: underline;
 }
 .homePage {
   display: flex;
