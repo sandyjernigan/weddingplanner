@@ -375,7 +375,7 @@ header nav {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  padding-top: 5px;
+  padding: 5px 20px;
   color: #5F3E6C;
   font-weight: bold;
 }
@@ -385,21 +385,12 @@ header nav .navbar {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 80%;
 }
 header nav a {
-  margin: 20px;
+  margin: 5px;
   color: #5F3E6C;
   font-weight: bold;
-}
-.navbarBG {
-  height: 130px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  background-color: AntiqueWhite;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-  /* For IE8 and earlier */
 }
 .homePage header {
   height: 100vh;
