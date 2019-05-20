@@ -1,27 +1,28 @@
 .carousel {
-  .flex(center, center);
-  height: 100vh;
+  .flex(center, flex-start);
+  width: 100%;
   position: absolute;
   overflow: hidden;
   top: 0;
-  width: 100%;
-  filter: sepia(75%);
-  -webkit-filter: sepia(75%);
-  -moz-filter: sepia(75%);
+  // filter: sepia(75%);
+  // -webkit-filter: sepia(75%);
+  // -moz-filter: sepia(75%);
 
   .left-button, .right-button {
     .flex(center, center);
-    color: @background-color;
+    color: @color-bg;
     background-color: @color-base;
     font-size: 40px;
     border-radius: 50%;
     position: absolute;
+    z-index: 99;
     width: 60px;
     height: 60px;
     &:hover {
       color: @color-base;
-      background-color: @background-color;
+      background-color: @color-bg;
       border: 2px solid @color-base;
+      cursor: pointer
     }
   }
   .left-button {
@@ -35,10 +36,21 @@
     transform: translate(0, -50%);
   }  
   img {
-    width: 100%;
     display: none;
+    top: 0;
   }
   .show {
-    display: flex;
+    display: inline-block;
+  }
+}
+.landscape {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.portrait {
+  img {
+    height: 100vh;
   }
 }

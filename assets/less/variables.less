@@ -8,14 +8,13 @@
 //Responsive
 @mobile: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 800px)";
-@medium: ~"(max-width: 999px)"; // not necessary
+@medium: ~"(max-width: 999px)"; // Medium to Large Views 
     // 1000px or > Large Desktop
 
 // Color Schemes
-@color-base: DarkSlateBlue;
+@color-base: #5F3E6C; // Took Purple color from logo image
 @color-light: SkyBlue;
-@background-color: Ivory;
-
+@color-bg: AntiqueWhite;
 
     // Complement
     @color-complement: spin(@color-base, 180);
@@ -27,14 +26,21 @@
     // Mixing Colors
     @color-primary: mix(@color-base, red);
     @color-secondary: mix(@color-base, green);
-    @color-tertiary: mix(@color-base, @background-color);
+    @color-tertiary: mix(@color-base, @color-bg);
 
     // Shade Colors
     @color-lighten: lighten(@color-base, 10%);
-    @color-lighter: lighten(@color-base, 20%);
+    @color-lighten2: lighten(@color-base, 20%);
+    @color-lighten3: lighten(@color-base, 30%);
+    @color-lighten4: lighten(@color-base, 40%);
+    @color-lighten5: lighten(@color-base, 50%);
+    @color-lighten6: lighten(@color-base, 60%);
+    @color-lighten7: lighten(@color-base, 70%);
+    @color-lighten8: lighten(@color-base, 80%);
+    @color-lighten9: lighten(@color-base, 90%);
     @color-darken: darken(@color-base, 10%);
     @color-darker: darken(@color-base, 20%);
-    @color-darker-bg: darken(@background-color, 20%);
+    @color-darker-bg: darken(@color-bg, 20%);
 
     // Saturation
     @color-saturate: saturate(@color-base, 10%);

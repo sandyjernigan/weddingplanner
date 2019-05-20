@@ -3,7 +3,7 @@
 
 <head>
   <title>Wedding Planner Portfolio</title>
-  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./assets/favicon.ico">
   <link rel="stylesheet" type="text/css" href="./assets/index.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -15,30 +15,26 @@
 
   <!-- Carousel -->
   <div class="carousel">
-    <div class="left-button"><i class="fas fa-angle-double-left"></i></div>
-    <img src="./assets/carousel/carousel-01.jpg" data-id="1" />
-    <img src="./assets/carousel/carousel-02.jpg" />
-    <img src="./assets/carousel/carousel-03.jpg" />
-    <img src="./assets/carousel/carousel-04.jpg" />
-    <img src="./assets/carousel/carousel-05.jpg" />
-    <img src="./assets/carousel/carousel-06.jpg" />
-    <div class="right-button"><i class="fas fa-angle-double-right"></i></div>
+    <div class="left-button" onclick="carouselChange(-1)"><i class="fas fa-angle-double-left"></i></div>
+    <img data-index="1" src="./assets/carousel/carousel-1.jpg" />
+    <img data-index="2" src="./assets/carousel/carousel-2.jpg" />
+    <img data-index="3" src="./assets/carousel/carousel-3.jpg" />
+    <img data-index="4" src="./assets/carousel/carousel-4.jpg" />
+    <img data-index="5" src="./assets/carousel/carousel-5.jpg" />
+    <div class="right-button" onclick="carouselChange(1)"><i class="fas fa-angle-double-right"></i></div>
   </div>
-
-  <!-- NavBar Background -->
-  <div class="navbarBG"></div>
 
   <div class="wrapper homePage">
     <!-- Navagtion-->
     <header>
       <nav>
         <span class="navbar">
-          <span class="logo">Logo</span>
-          <a href="index.html">Home</a>
+          <span class="logo"><img src="assets/img/logo.png" /></span>
+          <a href="index.html" class="active">Home</a>
           <a href="about.html">About</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Blog</a>
-          <a href="#">Testimonials</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="testimonials.html">Testimonials</a>
         </span>
         <span class="login">
           <a href="#">Sign In</a>
@@ -47,7 +43,44 @@
     </header>
 
     <!-- Content -->
+    <section class="main">
+      <div class="carouselIndex"></div>
+
+      <!-- Slide 1 -->
+      <article data-index="1">
+        <header>Treat your Future</header>
+        <div>A wedding planner for your dream come true.</div>
+      </article>
+
+      <!-- Slide 2 -->
+      <article data-index="2">
+        <header>Together Forever</header>
+        <div>Make your dreams come to life.</div>
+      </article>
+
+      <!-- Slide 3 -->
+      <article data-index="3">
+        <header>Happily Ever After</header>
+        <div>doesn't come easy without a little help.</div>
+      </article>
+
+      <!-- Slide 4 -->
+      <article data-index="4">
+        <header>"Where there is love</header>
+        <div>there is life." – Mahatma Gandhi</div>
+      </article>
+
+      <!-- Slide 5 -->
+      <article data-index="5">
+        <header>“A successful marriage</header>
+        <div>requires falling in love many times, always with the same person.” – Mignon McLaughlin</div>
+      </article>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>Make your appointment today.</footer>
+
   </div>
 </body>
-
 </html>
