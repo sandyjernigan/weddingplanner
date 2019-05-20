@@ -1,5 +1,6 @@
 // Mixins
 .flex(@justify: flex-start, @align: stretch, @direction: row, @wrap: nowrap) {
+  // .flex(flex-start, stretch, row, nowrap);
   display: flex;
   justify-content: @justify; // default is flex-start | flex-end | center | space-between | space-around | space-evenly
   align-items: @align; // default is stretch | flex-start | flex-end | center | baseline
@@ -9,6 +10,7 @@
 }
 
 .flexchild(@child: 0, @order: 0, @align: auto) {
+  // .flexchild(0 1 auto, 0, auto);
   flex: @child; // (flex-shrink and flex-basis) are optional. Default is 0 1 auto
   // flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] 
   order: @order; // default is 0 | <integer>
@@ -31,6 +33,7 @@
 
 // Shadow Outline
 .shadow-outline(@color: @color-bg, @horizontal: 1px, @vertical: 1px, @blur: 0) {
+  // .shadow-outline(@color-bg, 1px, 1px, 0);
   -webkit-filter: drop-shadow(@arguments) 
                   drop-shadow(-(@horizontal) -(@vertical) @blur @color);
   filter:         drop-shadow(@arguments) 

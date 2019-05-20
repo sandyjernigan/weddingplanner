@@ -240,7 +240,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -332,6 +332,7 @@ a {
   color: #5F3E6C;
   background-color: AntiqueWhite;
   border: 2px solid #5F3E6C;
+  cursor: pointer;
 }
 .carousel .left-button {
   top: 50%;
@@ -348,7 +349,7 @@ a {
   top: 0;
 }
 .carousel .show {
-  display: flex;
+  display: inline-block;
 }
 .landscape {
   height: 100vh;
@@ -392,6 +393,32 @@ header nav a {
   color: #5F3E6C;
   font-weight: bold;
 }
-.homePage header {
-  height: 100vh;
+.homePage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.homePage .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-weight: bold;
+}
+.homePage article {
+  display: none;
+}
+.homePage footer {
+  -webkit-filter: drop-shadow(white 2px 2px 12px) drop-shadow(-2px -2px 12px white);
+  filter: drop-shadow(white 2px 2px 12px) drop-shadow(-2px -2px 12px white);
+  text-align: center;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 1.8rem;
 }

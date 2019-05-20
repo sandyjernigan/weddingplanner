@@ -1,5 +1,22 @@
 .homePage {
-    header {
-        height: 100vh;
+    .flex(flex-start, stretch, row, wrap);
+    width: 100%;
+    //height: 100vh;
+
+    .main {
+        .flex(center, center);
+        font-weight: bold;
+    }
+    article {
+        display: none;
+    }
+    footer {
+        .shadow-outline(white, 2px, 2px, 12px);
+        text-align: center;
+        position: fixed;
+        bottom: 50px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 1.8rem;
     }
 }
