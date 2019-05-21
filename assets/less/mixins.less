@@ -34,10 +34,16 @@
 // Shadow Outline
 .shadow-outline(@color: @color-bg, @horizontal: 1px, @vertical: 1px, @blur: 0) {
   // .shadow-outline(@color-bg, 1px, 1px, 0);
-  -webkit-filter: drop-shadow(@arguments) 
+  -webkit-filter: drop-shadow(@arguments)
                   drop-shadow(-(@horizontal) -(@vertical) @blur @color);
-  filter:         drop-shadow(@arguments) 
+  filter:         drop-shadow(@arguments)
                   drop-shadow(-(@horizontal) -(@vertical) @blur @color);
+}
+
+// Drop Shadow
+.shadow-drop(@color: @color-bg, @horizontal: 1px, @vertical: 1px, @blur: 0) {
+  -webkit-filter: drop-shadow(@arguments);
+  filter:         drop-shadow(@arguments);
 }
 
 //Box Shadow
