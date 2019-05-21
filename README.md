@@ -6,14 +6,14 @@ As a wedding planner I want to be able to show off my work. I have a lot of amaz
 ## MVP Features Breakdown:
 
 This app contains two user types. 
-[ ] A wedding planner (who has the ability to log in)
-[x] A single user (no need to log in so no need for user data to be persisted on this user type) who can view portfolios
+- [ ] A wedding planner (who has the ability to log in)
+- [x] A single user (no need to log in so no need for user data to be persisted on this user type) who can view portfolios
 
 ### Onboarding process for wedding planner. 
-[ ] Include their location and contact info for people to reach them. 
+- [ ] Include their location and contact info for people to reach them. 
 
 ### Login Page
-[ ] After a user logs in, they'll be directed to their portfolio page where they can view what they have posted. They can also click to edit or delete posts. 
+- [ ] After a user logs in, they'll be directed to their portfolio page where they can view what they have posted. They can also click to edit or delete posts. 
 
 ### Navigation
 [ ] Navigation is present on all pages, Users should know what page is active by clicking on a nav link and activating their tab.
