@@ -4,12 +4,13 @@
 
     .main {
         .flex(center, center);
-        .shadow-drop(@color-bg, 1px, 1px, 12px);
+        .shadow-drop(@color-bg, 1px, 1px, 2px);
         font-weight: bold;
         font-size: 1.8rem;
     }
     article {
         display: none;
+        text-align: center;
 
         header {
             font-size: 2.4rem;
@@ -21,9 +22,12 @@
     }
     footer {
         text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
         position: fixed;
         bottom: 50px;
         left: 50%;
         transform: translate(-50%, 0);
+        .shadow-drop(@color-bg, 1px, 1px, 2px);
     }
 }

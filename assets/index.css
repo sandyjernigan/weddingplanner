@@ -410,13 +410,14 @@ header nav .active {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  -webkit-filter: drop-shadow(AntiqueWhite 1px 1px 12px);
-  filter: drop-shadow(AntiqueWhite 1px 1px 12px);
+  -webkit-filter: drop-shadow(AntiqueWhite 1px 1px 2px);
+  filter: drop-shadow(AntiqueWhite 1px 1px 2px);
   font-weight: bold;
   font-size: 1.8rem;
 }
 .homePage article {
   display: none;
+  text-align: center;
 }
 .homePage article header {
   font-size: 2.4rem;
@@ -427,8 +428,12 @@ header nav .active {
 }
 .homePage footer {
   text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
   position: fixed;
   bottom: 50px;
   left: 50%;
   transform: translate(-50%, 0);
+  -webkit-filter: drop-shadow(AntiqueWhite 1px 1px 2px);
+  filter: drop-shadow(AntiqueWhite 1px 1px 2px);
 }
