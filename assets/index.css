@@ -409,8 +409,9 @@ header nav .active {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  -webkit-filter: drop-shadow(black 2px 2px 0) drop-shadow(-2px -2px 0 black);
-  filter: drop-shadow(black 2px 2px 0) drop-shadow(-2px -2px 0 black);
+  -webkit-filter: drop-shadow(AntiqueWhite 2px 2px 0);
+  filter: drop-shadow(AntiqueWhite 2px 2px 0);
+  font-weight: bold;
   font-size: 1.8rem;
 }
 .homePage article {
