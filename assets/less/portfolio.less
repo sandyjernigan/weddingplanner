@@ -1,0 +1,74 @@
+.portfolioPage {
+    .main {
+        .topcis {
+            font-size: 0.9rem;
+            max-width: 525px;
+            margin: -30px auto 20px;
+            border-bottom: 2px solid @color-base;
+
+            .topicTheme, .topicLocation, .topicPlannername {
+                .flex(space-between, center, default, wrap);
+                margin: 10px;
+
+                .title {
+                    background-color: @color-bg;
+                    border-radius: 5px;
+                }
+                .topic {
+                    flex: 0 1 auto;
+                    margin: 0 2px;
+                    padding: 5px;
+                    background-color: @color-base;
+                    color: @color-bg;
+                    border: 2px solid @color-base;
+                }
+                .active {
+                    background-color: @color-bg;
+                    color: @color-base;
+                    border: 2px solid @color-base;
+                }
+            }
+        }
+        .content-container {
+            .flex(space-around, stretch, row, wrap);
+        }
+        article {
+            .box-shadow(2px; 2px; 5px; #000);
+            background-color: fade(@color-bg, 80%);
+            flex: 0 1 30%;
+            min-width: 30%;
+            margin: 10px 5px;
+            padding: 5px;
+            text-align: center;
+
+            div {
+                padding: 10px;
+            }
+        }
+        .weddingTheme {
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+        img {
+            width: 90%;
+        }
+        .weddingDescription {
+            font-size: 0.9rem;
+        }
+        .weddingLocation {
+            font-size: 1.2rem;
+            font-weight: bold;
+            p{
+                padding: 10px;
+            }
+        }
+        span {
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+        .weddingPlanner {
+            font-size: 1.2rem;
+            font-family: @headerFont;
+        }
+    }
+}
