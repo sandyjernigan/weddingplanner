@@ -390,8 +390,30 @@ a {
   text-align: center;
 }
 .portfolioPage .main article div {
-  padding: 5px;
+  padding: 10px;
+}
+.portfolioPage .main .weddingTheme {
+  font-size: 1.2rem;
+  padding: 10px;
 }
 .portfolioPage .main img {
-  width: 100px;
+  width: 90%;
+}
+.portfolioPage .main .weddingDescription {
+  font-size: 0.9rem;
+}
+.portfolioPage .main .weddingLocation {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.portfolioPage .main .weddingLocation p {
+  padding: 10px;
+}
+.portfolioPage .main span {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+.portfolioPage .main .weddingPlanner {
+  font-size: 1.2rem;
+  font-family: 'Lemon', "Comic Sans MS", cursive, sans-serif;
 }
