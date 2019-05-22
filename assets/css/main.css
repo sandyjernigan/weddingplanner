@@ -59,14 +59,19 @@ table {
 
 body {
 	display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  background-color: AntiqueWhite;
-  color: #5F3E6C;
-  font-family: 'Roboto Slab', serif;
-}
+	justify-content: none;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	background-color: FloralWhite;
+	color: #5F3E6C;
+	font-family: 'Roboto Slab', serif;
+	background: url("../../img/bg.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
 
 mark {
 	background-color: transparent;
