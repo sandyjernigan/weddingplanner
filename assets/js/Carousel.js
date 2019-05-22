@@ -10,7 +10,7 @@ const carouselImg = Array.from(document.querySelectorAll(`.carousel img`));
 var dots = document.getElementsByClassName("dot");
 
 // Reference to the images - Array
-const carouselArticle = Array.from(document.querySelectorAll(`.homePage article`));
+const carouselArticle = Array.from(document.querySelectorAll(`#carouselContent article`));
 
 // Current Index
 let carouselIndex = 0;
