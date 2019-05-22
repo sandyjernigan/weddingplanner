@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("font-awesome.min.css");
-
+@font-face {
+  font-family: 'Lemon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lemon Regular'), local('Lemon-Regular'), url(https://fonts.gstatic.com/s/lemon/v7/HI_EiYEVKqRMq3jGQ5E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v8/BngMUXZYTXPIvIBgJJSb6ufN5qA.ttf) format('truetype');
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -16,7 +27,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -47,7 +58,14 @@ table {
 }
 
 body {
-	-webkit-text-size-adjust: none;
+	display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: AntiqueWhite;
+  color: #5F3E6C;
+  font-family: 'Roboto Slab', serif;
 }
 
 mark {
@@ -1977,16 +1995,6 @@ input, select, textarea {
 		.wrapper.style1 {
 			background-image: none;
 			background-color:antiquewhite;
-		}
-
-		.wrapper.style2 {
-			background-color: #fafafa;
-			text-shadow: 1px 1px 0px #fff;
-		}
-
-		.wrapper.style3 {
-			background-color: #f4f4f4;
-			text-shadow: 1px 1px 0px #fff;
 		}
 
 		.wrapper.style4 {
