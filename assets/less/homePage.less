@@ -2,24 +2,28 @@
     .flex(center, stretch, row, wrap);
     width: 100%;
 
-    .main {
+    #carouselContent {
         .flex(center, center);
         .shadow-drop(@color-bg, 1px, 1px, 2px);
         font-weight: bold;
         font-size: 1.8rem;
-    }
-    article {
-        display: none;
         text-align: center;
 
-        header {
-            font-size: 2.4rem;
-            margin: 50px 0;
+        article {
+            display: none;
+
+            h1 {
+                font-size: 2.4rem;
+                margin: 50px 0;
+            }
+            p {
+                font-family: @bodyFont;
+            }
         }
-    }
-    .show {
-      display: inline-block;
-    }
+        .show {
+          display: inline-block;
+        }  
+    }  
     footer {
         text-align: center;
         font-size: 1.6rem;

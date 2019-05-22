@@ -1,5 +1,5 @@
 header {
-    .flex(center, flex-start);
+    .flex(space-between, center);
     width: 100%;
 
     nav {
@@ -8,8 +8,6 @@ header {
         padding: 5px 20px;
         color: @color-base;
         font-weight: bold;
-        // flex: 1 100%; /* We tell all items to be 100% width, via flex-basis */
-        //.shadow-outline(@color-lighten4, 1px, 1px, 1px); //@color-bg
 
         .navbar {
             .flex(space-between, center);
@@ -24,9 +22,9 @@ header {
             
         .active {
             // Action on class active
-            //.shadow-outline(@color-bg, 1px, 1px, 1px); //@color-bg
-            //color: black; 
-            text-decoration: underline;
+            text-decoration-line: overline underline;
+            text-decoration-style: double;
+            text-decoration-color: @color-lighten3;
         }
     }
     //  img {
