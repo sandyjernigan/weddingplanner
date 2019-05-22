@@ -240,6 +240,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
 		width: 1200px;
+		margin-top: 2rem;
 	}
 
 		.container.medium {
@@ -1923,12 +1924,12 @@ input, select, textarea {
 
 /* Box */
 
-	.box {
+	/* .box {
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
-	}
+	} */
 
 		.box.style1 {
 			padding: 3em 2em 3.5em 2em;
