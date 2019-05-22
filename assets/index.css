@@ -296,6 +296,13 @@ body {
   position: absolute;
   top: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lemon', "Comic Sans MS", cursive, sans-serif;
+}
 a {
   color: #5F3E6C;
   text-decoration: none;
@@ -363,8 +370,8 @@ a {
 }
 header {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
@@ -394,7 +401,9 @@ header nav a {
   font-weight: bold;
 }
 header nav .active {
-  text-decoration: underline;
+  text-decoration-line: overline underline;
+  text-decoration-style: double;
+  text-decoration-color: #ac88bb;
 }
 .homePage {
   display: flex;
@@ -404,7 +413,7 @@ header nav .active {
   flex-wrap: wrap;
   width: 100%;
 }
-.homePage .main {
+.homePage #carouselContent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -414,16 +423,19 @@ header nav .active {
   filter: drop-shadow(AntiqueWhite 1px 1px 2px);
   font-weight: bold;
   font-size: 1.8rem;
-}
-.homePage article {
-  display: none;
   text-align: center;
 }
-.homePage article header {
+.homePage #carouselContent article {
+  display: none;
+}
+.homePage #carouselContent article h1 {
   font-size: 2.4rem;
   margin: 50px 0;
 }
-.homePage .show {
+.homePage #carouselContent article p {
+  font-family: 'Roboto Slab', serif;
+}
+.homePage #carouselContent .show {
   display: inline-block;
 }
 .homePage footer {
