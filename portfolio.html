@@ -31,7 +31,80 @@
     </header>
 
     <!-- Content -->
-  </div>
+    <div class = "main">
+
+      <!--  Topics
+            Select Different Topics to change what displays on the page. They can filter by planner name, location, or theme.-->
+      <div class="topcis">
+        <div class="topicTheme">
+          <span class="title">Theme:</span>
+          <div data-theme="all" class="tab active-tab">ALL</div>
+          <div data-theme="romantic" class="tab">Romantic</div>
+          <div data-theme="alternative" class="tab">Alternative</div>
+          <div data-theme="vintage" class="tab">Vintage</div>
+          <div data-theme="whimsical" class="tab">Whimsical</div>
+          <div data-theme="rustic" class="tab">Rustic</div>
+        </div>
+        <div class="topicLocation">
+          <span class="title">Location:</span>
+        </div>
+        <div class="topicPlannername">
+          <span class="title">Planner Name:</span>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <!-- Each post needs to have an image, description, wedding location, wedding theme -->
+      <div class="content-container">
+
+          <article data-theme="romantic">
+            <div class="weddingTheme">Romantic</div>
+            <img src="./img/beautiful-bloom-blossom.jpg" />
+            <div class="weddingDescription">
+              Soft hues, delicate lighting, and plenty of florals typically make up a romantic wedding. For this theme, envision pastels, hanging lights (even chandeliers), calligraphy, and a flower wall.
+            </div>
+            <div class="weddingLocation">Garden</div>
+          </article>
+
+          <article data-theme="alternative">
+            <div class="weddingTheme">Alternative</div>
+            <img src="./img/placeholder.jpg" />
+            <div class="weddingDescription">
+              More of an offbeat bride who's never been one to take the normal route? We get you. Buck tradition with an alternative wedding theme, and roll with it however you see fit. If cool, moody color palettes and creative stand-ins match your style better than bright flora and been-there-done-that wedding decor, then an alternative theme has your name written all over it. Push the boundaries as much as you want.
+            </div>
+            <div class="weddingLocation">Destination</div>
+          </article>
+
+          <article data-theme="vintage">
+            <div class="weddingTheme">Vintage</div>
+            <img src="./img/placeholder.jpg" />
+            <div class="weddingDescription">
+              Draw inspiration from decades past if you want a vintage style for your wedding—and one of the easiest ways to channel this is through your wedding outfit and beauty look. As for the ceremony and reception, you can rely on antique-looking decor, like weathered doors and worn-in wood seats, to further exemplify a vintage-inspired wedding. For your last hoorah, finish off the vintage theme driving away in a classic getaway car, like an old Porsche or Volkswagen.
+            </div>
+            <div class="weddingLocation">Church</div>
+          </article>
+
+          <article data-theme="whimsical">
+            <div class="weddingTheme">Whimsical</div>
+            <img src="./img/placeholder.jpg" />
+            <div class="weddingDescription">
+                For the whimsical couple, your wedding will be one of bright splashes of color and quirky, bohemian components. Incorporate design elements like multicolored balloons, streamers, punchy floral arrangements, and mismatched chairs if you and your future groom want to plan a whimsical wedding.
+            </div>
+            <div class="weddingLocation">Lake</div>
+          </article>
+
+          <article data-theme="rustic">
+            <div class="weddingTheme">Rustic</div>
+            <img src="./img/placeholder.jpg" />
+            <div class="weddingDescription">
+                String lights, mason jars, twine, lace, and all wood everything contribute to the simple and homey vibe of this theme. If you're a huge DIY fan, rustic wedding decor will be your cup of tea. Consider a more rural venue, like a chic and intimate barn (wood or bust), if this is your dream wedding style.
+            </div>
+            <div class="weddingLocation">Barn</div>
+          </article>
+
+      </div> <!--content-container -->
+    </div> <!-- main -->
+  </div> <!-- wrapper -->
 </body>
 
 </html>
