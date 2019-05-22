@@ -15,7 +15,7 @@
                     border-radius: 5px;
                 }
                 .topic {
-                    flex-basis: auto;
+                    flex: 0 1 auto;
                     margin: 0 2px;
                     padding: 5px;
                     background-color: @color-base;
@@ -35,9 +35,15 @@
         article {
             .box-shadow(2px; 2px; 5px; #000);
             background-color: fade(@color-bg, 80%);
-            flex-basis: 28%;
-            margin: 15px 5px;
-            padding: 10px;
+            flex: 0 1 30%;
+            min-width: 30%;
+            margin: 10px 5px;
+            padding: 5px;
+            text-align: center;
+
+            div {
+                padding: 5px;
+            }
         }
 
         img {
