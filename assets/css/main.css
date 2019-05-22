@@ -1985,11 +1985,19 @@ input, select, textarea {
 
 /* Wrappers */
 
+.wrapper-nav {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+}
+
 	.wrapper {
-		background-image: url("images/bg.png");
-		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		/* background-image: url("images/bg.png");
+		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1); */
 		padding: 8em 0 8em 0;
 		text-align: center;
+		
 	}
 
 		.wrapper.style1 {
