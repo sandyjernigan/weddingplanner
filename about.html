@@ -1,49 +1,126 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
+	<head>
+		<title>Miniport by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
 
-<head>
-  <title>Wedding Planner Portfolio</title>
-  <link rel="icon" href="./favicon.ico">
-  <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="./assets/js/Tabs.js" async></script>
-  <script src="./assets/js/Carousel.js" async></script>
-</head>
-
-<body>
-
-  <!-- Carousel -->
-  <div class="carousel">
-    <div class="left-button"><</div>
-    <img src="./assets/carousel/carousel-01.jpg" />
-    <img src="./assets/carousel/carousel-02.jpg" />
-    <img src="./assets/carousel/carousel-03.jpg" />
-    <img src="./assets/carousel/carousel-04.jpg" />
-    <img src="./assets/carousel/carousel-05.jpg" />
-    <img src="./assets/carousel/carousel-06.jpg" />
-    <img src="./assets/carousel/carousel-07.jpg" />
-    <div class="right-button">></div>
-  </div>  
-
-  <!-- Navagtion-->
-  <header>
+    <!-- Nav -->
+    <header>
     <nav>
-      <span class="navbar">
-        <span class="logo">Logo</span>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Blog</a>
-        <a href="#">Testimonials</a>
-      </span>
-      <span class="login">
-        <a href="#">Sign In</a>
-      </span>
-    </nav>
-  </header>
+        <span class="navbar">
+          <span class="logo"><img src="./img/logo.png" /></span>
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="testimonials.html">Testimonials</a>
+        </span>
+        <span class="login">
+          <a href="#">Sign In</a>
+        </span>
+      </nav>
+    </header>
 
-  <!-- Content -->
+		<!-- Content -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="img/Juan.jpg" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1>Hi. I'm <strong>Juan Reyes</strong>.</h1>
+							</header>
+              <p>And this is <strong>My work</strong>. <br>
+                Lambda School Full-Stack Web Development Student.<br>
+                Since 2019</p>
+							<a href="#work" class="button large scrolly">See My Code</a>
+						</div>
+					</div>
+				</div>
+      </article>
+      <article id="top" class="wrapper style1">
+          <div class="container">
+            <div class="row">
+              <div class="col-4 col-5-large col-12-medium">
+                <span class="image fit"><img src="img/Sandy.jpg" alt="" /></span>
+              </div>
+              <div class="col-8 col-7-large col-12-medium">
+                  <header>
+                    <h1>Hi. I'm <strong>Sandy Jernigan</strong>.</h1>
+                  </header>
+                  <p>And this is <strong>My work</strong>. <br>
+                    Lambda School Full-Stack Web Development Student.<br>
+                    Since 2019</p>
+                  <a href="#work" class="button large scrolly">See My Code</a>
+                </div>
+            </div>
+          </div>
+        </article>
 
-</body>
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Let's plan your wedding.</h2>
+						<p>Reach us for any questions using the form below.</p>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" placeholder="Subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear Form" class="alt" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-12">
+							<hr />
+							<h3>Find us ...</h3>
+							<ul class="social">
+								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+								<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							</ul>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</article>
 
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
