@@ -46,9 +46,23 @@
   filter:         drop-shadow(@arguments);
 }
 
-//Box Shadow
+// Box Shadow
 .box-shadow(@x: 0; @y: 0; @blur: 1px; @color: #000) {
   -webkit-box-shadow: @arguments;
      -moz-box-shadow: @arguments;
           box-shadow: @arguments;
+}
+
+// Opacity
+.opacity(@num) {
+  opacity: percentage(@num);
+  filter: alpha(opacity=@num); /* For IE8 and earlier */
+}
+
+.bgimage(@image) {  
+  background: url(@image) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
