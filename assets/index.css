@@ -449,3 +449,26 @@ header nav .active {
   -webkit-filter: drop-shadow(AntiqueWhite 1px 1px 2px);
   filter: drop-shadow(AntiqueWhite 1px 1px 2px);
 }
+body {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: AntiqueWhite;
+  color: #5F3E6C;
+  font-family: 'Roboto Slab', serif;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+}
+a {
+  color: #5F3E6C;
+  text-decoration: none;
+}
+.portfolioPage .main img {
+  width: 100px;
+}
