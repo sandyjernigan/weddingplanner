@@ -5,6 +5,10 @@ function navBarDropDown() {
 }
 
 // Adding Sign In Function
+
+const signInButton = document.getElementById("signIn");
+signInButton.addEventListener("click", checkCookie());
+
 function setCookie(cname, cvalue, exdays) {
   // name of the cookie (cname)
   // the value of the cookie (cvalue)
@@ -43,6 +47,3 @@ function checkCookie() {
     }
   }
 }
-
-const signInButton = document.getElementById("signIn");
-signInButton.addEventListener("click", checkCookie());
