@@ -100,17 +100,6 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-	display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  background-color: AntiqueWhite;
-  color: #5F3E6C;
-  font-family: 'Roboto Slab', serif;
-	}
-
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -2001,14 +1990,18 @@ input, select, textarea {
 	.wrapper {
 		/* background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1); */
-		padding: 8em 0 8em 0;
+		padding: 4em 0 4em 0;
+		margin: 4em 0 4em 0;
 		text-align: center;
 		
 	}
 
 		.wrapper.style1 {
-			background-image: none;
-			background-color:antiquewhite;
+			background-color: rgba(255, 250, 240, 0.7);
+			-webkit-box-shadow: 2px 2px 5px #000;
+			-moz-box-shadow: 2px 2px 5px #000;
+			box-shadow: 2px 2px 5px #000;
+			margin: 2em 0 2em 0;
 		}
 
 		.wrapper.style4 {
@@ -2092,31 +2085,39 @@ header nav .active {
 	}
 
 	#top {
-		padding: 10em 0 10em 0;
+		margin-top: 10em;
+		text-align: left;
+	}
+	#second {
 		text-align: left;
 	}
 
-		#top .image {
+	.contact {
+		padding: 10em 0 10em 0;
+		margin-top: 10em;
+	}
+
+		.contact .image {
 			border-radius: 100%;
 			width: 20em;
 			height: 20em;
 			margin: 0;
 		}
 
-			#top .image img {
+			.contact .image img {
 				border-radius: 100%;
 			}
 
-		#top h1 {
+		.contact h1 {
 			margin-top: 0.35em;
 		}
 
-		#top p {
+		.contact p {
 			font-size: 1.5em;
 			line-height: 1.75em;
 		}
 
-			#top p a {
+			.contact p a {
 				color: inherit;
 			}
 
@@ -2153,11 +2154,11 @@ header nav .active {
 
 		/* Articles */
 
-			#top {
+			.contact {
 				padding: 8em 0;
 			}
 
-				#top .image {
+				.contact .image {
 					width: 24em;
 					height: 24em;
 					margin: 0;
@@ -2171,12 +2172,12 @@ header nav .active {
 
 		/* Articles */
 
-			#top {
+			.contact {
 				text-align: center;
 				padding: 5em 0;
 			}
 
-				#top .image {
+				.contact .image {
 					margin: 0 auto 2em auto;
 				}
 
@@ -2344,17 +2345,17 @@ header nav .active {
 
 		/* Articles */
 
-			#top {
+			.contact {
 				padding: 3em 0;
 			}
 
-				#top .image {
+				.contact .image {
 					width: 15em;
 					height: 15em;
 					margin-bottom: 0;
 				}
 
-				#top p {
+				.contact p {
 					font-size: 1em;
 				}
 

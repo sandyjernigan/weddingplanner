@@ -231,7 +231,7 @@ a {
 .portrait img {
   height: 100vh;
 }
-header {
+#headerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,7 +239,7 @@ header {
   flex-wrap: nowrap;
   width: 100%;
 }
-header nav {
+#headerNav nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -250,7 +250,7 @@ header nav {
   color: #5F3E6C;
   font-weight: bold;
 }
-header nav .navbar {
+#headerNav nav .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -258,12 +258,42 @@ header nav .navbar {
   flex-wrap: nowrap;
   width: 80%;
 }
-header nav a {
+@media (max-width: 500px) {
+  #headerNav nav .navbar.responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  #headerNav nav .navbar.responsive a {
+    flex-basis: 100%;
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  #headerNav nav .navbar a {
+    display: none;
+    flex-basis: 100%;
+  }
+}
+#headerNav nav .navbar .icon {
+  display: none;
+}
+@media (max-width: 500px) {
+  #headerNav nav .navbar .icon {
+    display: flex;
+  }
+}
+#headerNav nav .navbar a {
   margin: 5px;
   color: #5F3E6C;
   font-weight: bold;
 }
-header nav .active {
+#headerNav nav .navbar .active {
   text-decoration-line: overline underline;
   text-decoration-style: double;
   text-decoration-color: #ac88bb;
