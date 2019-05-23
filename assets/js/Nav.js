@@ -45,4 +45,4 @@ function checkCookie() {
 }
 
 const signInButton = document.getElementById("signIn");
-signInButton.addEventListener("click", checkCookie);
+signInButton.addEventListener("click", checkCookie());
