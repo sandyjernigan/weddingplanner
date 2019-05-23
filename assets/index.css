@@ -280,14 +280,6 @@ a {
     flex-basis: 100%;
   }
 }
-#headerNav nav .navbar .icon {
-  display: none;
-}
-@media (max-width: 500px) {
-  #headerNav nav .navbar .icon {
-    display: flex;
-  }
-}
 #headerNav nav .navbar a {
   margin: 5px;
   color: #5F3E6C;
@@ -297,6 +289,14 @@ a {
   text-decoration-line: overline underline;
   text-decoration-style: double;
   text-decoration-color: #ac88bb;
+}
+#headerNav nav .icon {
+  display: none;
+}
+@media (max-width: 500px) {
+  #headerNav nav .icon {
+    display: flex;
+  }
 }
 .homePage {
   display: flex;

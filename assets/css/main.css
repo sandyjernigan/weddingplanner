@@ -2360,7 +2360,8 @@ header nav .active {
 				}
 
 	}
-	
+
+/* #headerNav */
 	#headerNav {
 		display: flex;
 		justify-content: space-between;
@@ -2410,11 +2411,11 @@ header nav .active {
 		  flex-basis: 100%;
 		}
 	  }
-	  #headerNav nav .navbar .icon {
+	  #headerNav nav .icon {
 		display: none;
 	  }
 	  @media (max-width: 500px) {
-		#headerNav nav .navbar .icon {
+		#headerNav nav .icon {
 		  display: flex;
 		}
 	  }

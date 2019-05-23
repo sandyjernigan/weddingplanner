@@ -34,14 +34,6 @@
                 }
             }
 
-            .icon {
-                display: none;
-
-                @media @mobile {                    
-                    display: flex;
-                }
-              }
-
             a {
                 margin: 5px;
                 color: @color-base;
@@ -55,5 +47,14 @@
                 text-decoration-color: @color-lighten3;
             }
         } //.navbar
+
+        .icon {
+            display: none;
+
+            @media @mobile {                    
+                display: flex;
+            }
+          }
+          
     } //nav
 } // headerNav
