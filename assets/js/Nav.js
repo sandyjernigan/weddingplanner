@@ -1,13 +1,13 @@
 function navBarDropDown() {
   let nav = document.getElementById("mainNav");
     nav.classList.toggle("responsive");
-    console.log("clicked");
 }
 
 // Adding Sign In Function
 
 const signInButton = document.getElementById("signIn");
-signInButton.addEventListener("click", checkCookie());
+signInButton.onclick = checkCookie;
+//signInButton.addEventListener("click", checkCookie());
 
 function setCookie(cname, cvalue, exdays) {
   // name of the cookie (cname)
