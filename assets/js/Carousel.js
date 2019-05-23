@@ -7,7 +7,7 @@ let carousel = document.querySelector(`.carousel`);
 const carouselImg = Array.from(document.querySelectorAll(`.carousel img`));
 
 // Reference to dots for which slide
-var dots = document.getElementsByClassName("dot");
+// var dots = document.getElementsByClassName("dot");
 
 // Reference to the images - Array
 const carouselArticle = Array.from(document.querySelectorAll(`#carouselContent article`));
@@ -26,13 +26,13 @@ checkViewPort();
 let leftButton = document.querySelector(`.left-button`);
 
     // Left Button Click Event
-    //leftButton.addEventListener('click', carouselChange(-1));
+    // leftButton.addEventListener('click', carouselChange(-1));
 
 // Right Button Reference
 const rightButton = document.querySelector(`.right-button`);
 
     // Right Button Click Event
-    //rightButton.addEventListener('click', () => carouselChange(1));
+    // rightButton.addEventListener('click', () => carouselChange(1));
 
 function carouselChange(num) {
     // Turn off display on current image
