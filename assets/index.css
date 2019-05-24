@@ -344,7 +344,7 @@ a {
 }
 .portfolioPage .main .topcis {
   font-size: 0.9rem;
-  max-width: 525px;
+  width: 600px;
   margin: -30px auto 20px;
   border-bottom: 2px solid #5F3E6C;
 }
@@ -426,4 +426,64 @@ a {
 .portfolioPage .main .weddingPlanner {
   font-size: 1.2rem;
   font-family: 'Lemon', "Comic Sans MS", cursive, sans-serif;
+}
+.blogPage .main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .blogPage {
+    /* All items to be 100% width, via flex-basis */
+  }
+  .blogPage .main > * {
+    flex: 1 100%;
+  }
+}
+.blogPage .topcis {
+  order: 1;
+  font-size: 0.9rem;
+  margin: 0 20px 0 0;
+  border-bottom: 2px solid #5F3E6C;
+}
+@media (max-width: 800px) {
+  .blogPage .topcis {
+    /* Both sidebars share a row */
+    flex: 1 auto;
+  }
+}
+.blogPage .topcis div {
+  margin: 0 2px;
+  padding: 20px;
+}
+.blogPage .content-container {
+  /* main element takes twice as much width */
+  flex: 2 0px;
+  order: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.blogPage .rightSide {
+  order: 3;
+}
+@media (max-width: 800px) {
+  .blogPage .rightSide {
+    /* Both sidebars share a row */
+    flex: 1 auto;
+  }
+}
+.blogPage article {
+  padding: 20px;
+}
+.blogPage article img {
+  width: 200px;
+  float: left;
+}
+.blogPage article div h3 {
+  padding: 0 0 20px 0;
 }
