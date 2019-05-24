@@ -336,10 +336,13 @@ footer a {
 }
 .homePage #carouselContent article {
   display: none;
+  background-color: rgba(255, 250, 240, 0.3);
+  border-radius: 20px;
+  margin: 40px 0;
+  padding: 15px 10px;
 }
 .homePage #carouselContent article h1 {
   font-size: 2.4rem;
-  margin: 50px 0;
 }
 .homePage #carouselContent article p {
   font-family: 'Roboto Slab', serif;
