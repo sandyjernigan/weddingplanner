@@ -1,0 +1,72 @@
+.blogPage {
+
+    .main {
+        .flex(flex-start, flex-start, row, wrap);
+        margin: 0 50px;
+    }
+
+    @media @mobile {
+        /* All items to be 100% width, via flex-basis */
+        .main > * {
+        flex: 1 100%;
+        }
+    }
+    
+    .topcis {
+        order: 1;
+        font-size: 0.9rem;
+        margin: 0 20px 0 0;
+        border-bottom: 2px solid @color-base;
+
+        div {
+            margin: 20px 0;
+            padding: 5px;
+        }
+        .topic {
+            background-color: @color-base;
+            color: @color-bg;
+            border: 2px solid @color-base;
+        }
+        .active {
+            background-color: @color-bg;
+            color: @color-base;
+            border: 2px solid @color-base;
+        }
+    }
+    
+    .content-container {
+        /* main element takes twice as much width */
+        flex: 2 0px;
+        order: 2;
+    }
+
+    
+    .rightSide {
+        order: 3;
+        @media @tablet {
+            display: none;
+        }
+    }
+
+    article {
+        .box-shadow(2px; 2px; 5px; #000);
+        margin: 0 0 20px 0;
+        line-height: 1.2em;
+        
+        img {
+            width: 50%;
+            min-width: 200px;
+            float: left;
+            padding: 0 10px 5px 0;
+        }
+
+        div h3 {
+            padding: 0 0 20px 0;
+        }
+    }
+
+    .topcis, .rightSide, article {
+        background-color: fade(@color-bg, 60%);
+        padding: 10px;
+    }
+}
