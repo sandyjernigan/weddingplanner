@@ -16,7 +16,7 @@
                 }
                 .topic {
                     flex: 0 1 auto;
-                    margin: 0 2px;
+                    margin: 2px 2px;
                     padding: 5px;
                     background-color: @color-base;
                     color: @color-bg;
@@ -27,6 +27,16 @@
                     color: @color-base;
                     border: 2px solid @color-base;
                 }
+            }
+
+            @media @tablet {
+                margin: 0 auto 20px;
+                max-width: 600px;
+                width: 100%;
+            }
+
+            @media @mobile {
+                flex: 1 100%;
             }
         }
         .content-container {

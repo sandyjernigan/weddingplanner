@@ -256,6 +256,11 @@ footer a {
   color: #5F3E6C;
   font-weight: bold;
 }
+@media (max-width: 800px) {
+  #headerNav nav {
+    font-size: 0.85rem;
+  }
+}
 #headerNav nav .navbar {
   display: flex;
   justify-content: space-between;
@@ -302,6 +307,11 @@ footer a {
 @media (max-width: 500px) {
   #headerNav nav .icon {
     display: flex;
+  }
+}
+@media (max-width: 800px) {
+  #headerNav img {
+    width: 100px;
   }
 }
 .homePage {
@@ -374,7 +384,7 @@ footer a {
 .portfolioPage .main .topcis .topicLocation .topic,
 .portfolioPage .main .topcis .topicPlannername .topic {
   flex: 0 1 auto;
-  margin: 0 2px;
+  margin: 2px 2px;
   padding: 5px;
   background-color: #5F3E6C;
   color: FloralWhite;
@@ -386,6 +396,18 @@ footer a {
   background-color: FloralWhite;
   color: #5F3E6C;
   border: 2px solid #5F3E6C;
+}
+@media (max-width: 800px) {
+  .portfolioPage .main .topcis {
+    margin: 0 auto 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .portfolioPage .main .topcis {
+    flex: 1 100%;
+  }
 }
 .portfolioPage .main .content-container {
   display: flex;
