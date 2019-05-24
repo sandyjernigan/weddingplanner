@@ -3,11 +3,13 @@ function navBarDropDown() {
     nav.classList.toggle("responsive");
 }
 
-// Adding Sign In Function
-
+// Sign In Function
 const signInButton = document.getElementById("signIn");
 signInButton.onclick = checkCookie;
 //signInButton.addEventListener("click", checkCookie());
+
+  // Check on load
+  window.addEventListener("load", checkOnLoadCookie);
 
 function setCookie(cname, cvalue, exdays) {
   // name of the cookie (cname)
@@ -39,11 +41,21 @@ function getCookie(cname) {
 function checkCookie() {
   var username = getCookie("username");
   if (username != "") {
-   alert("Welcome again " + username);
+   // alert("Welcome again " + username);
+   document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+   signInButton.textContent = "Sign In";
   } else {
     username = prompt("Please enter your name:", "");
     if (username != "" && username != null) {
       setCookie("username", username, 365);
+      signInButton.textContent = "Welcome " + username;
     }
   }
+}
+
+function checkOnLoadCookie() {
+  var username = getCookie("username");
+    if (username != "" && username != null) {
+      signInButton.textContent = "Welcome " + username;
+    }
 }
