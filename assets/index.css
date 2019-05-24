@@ -525,6 +525,7 @@ footer a {
   width: 50%;
   min-width: 200px;
   float: left;
+  padding: 0 10px 5px 0;
 }
 .blogPage article div h3 {
   padding: 0 0 20px 0;
