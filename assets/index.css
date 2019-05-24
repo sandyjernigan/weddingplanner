@@ -408,6 +408,16 @@ footer a {
 .portfolioPage .main article div {
   padding: 10px;
 }
+@media (max-width: 800px) {
+  .portfolioPage .main article {
+    flex: 1 45%;
+  }
+}
+@media (max-width: 500px) {
+  .portfolioPage .main article {
+    flex: 1 100%;
+  }
+}
 .portfolioPage .main .weddingTheme {
   font-size: 1.2rem;
   padding: 10px;
