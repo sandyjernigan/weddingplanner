@@ -170,6 +170,12 @@ a {
   color: #5F3E6C;
   text-decoration: none;
 }
+footer {
+  line-height: 1.5em;
+}
+footer a {
+  text-decoration: underline;
+}
 .carousel {
   display: flex;
   justify-content: center;
@@ -433,6 +439,7 @@ a {
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 50px;
 }
 @media (max-width: 500px) {
   .blogPage {
@@ -448,42 +455,51 @@ a {
   margin: 0 20px 0 0;
   border-bottom: 2px solid #5F3E6C;
 }
-@media (max-width: 800px) {
-  .blogPage .topcis {
-    /* Both sidebars share a row */
-    flex: 1 auto;
-  }
-}
 .blogPage .topcis div {
-  margin: 0 2px;
-  padding: 20px;
+  margin: 20px 0;
+  padding: 5px;
+}
+.blogPage .topcis .topic {
+  background-color: #5F3E6C;
+  color: FloralWhite;
+  border: 2px solid #5F3E6C;
+}
+.blogPage .topcis .active {
+  background-color: FloralWhite;
+  color: #5F3E6C;
+  border: 2px solid #5F3E6C;
 }
 .blogPage .content-container {
   /* main element takes twice as much width */
   flex: 2 0px;
   order: 2;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 .blogPage .rightSide {
   order: 3;
 }
 @media (max-width: 800px) {
   .blogPage .rightSide {
-    /* Both sidebars share a row */
-    flex: 1 auto;
+    display: none;
   }
 }
 .blogPage article {
-  padding: 20px;
+  -webkit-box-shadow: 2px 2px 5px #000;
+  -moz-box-shadow: 2px 2px 5px #000;
+  box-shadow: 2px 2px 5px #000;
+  margin: 0 0 20px 0;
+  line-height: 1.2em;
 }
 .blogPage article img {
-  width: 200px;
+  width: 50%;
+  min-width: 200px;
   float: left;
 }
 .blogPage article div h3 {
   padding: 0 0 20px 0;
+}
+.blogPage .topcis,
+.blogPage .rightSide,
+.blogPage article {
+  background-color: rgba(255, 250, 240, 0.6);
+  padding: 10px;
 }
