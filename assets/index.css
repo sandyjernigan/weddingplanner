@@ -285,16 +285,24 @@ footer a {
     display: block;
   }
 }
+#headerNav nav .navbar a {
+  margin: 5px;
+  color: #5F3E6C;
+  font-weight: bold;
+}
+#headerNav nav .navbar a:hover {
+  color: #26192b;
+  text-decoration-line: underline;
+  text-decoration-style: underline;
+  text-decoration-color: #7b518c;
+  -webkit-filter: drop-shadow(#c3a9cd 1px 1px 1px) drop-shadow(-1px -1px 1px #c3a9cd);
+  filter: drop-shadow(#c3a9cd 1px 1px 1px) drop-shadow(-1px -1px 1px #c3a9cd);
+}
 @media (max-width: 500px) {
   #headerNav nav .navbar a {
     display: none;
     flex-basis: 100%;
   }
-}
-#headerNav nav .navbar a {
-  margin: 5px;
-  color: #5F3E6C;
-  font-weight: bold;
 }
 #headerNav nav .navbar .active {
   text-decoration-line: overline underline;

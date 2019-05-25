@@ -31,16 +31,23 @@
             } // &.responsive
 
             a {
+                margin: 5px;
+                color: @color-base;
+                font-weight: bold;
+
+                &:hover {
+                    color: @color-darker;
+                    text-decoration-line: underline;
+                    text-decoration-style: underline;
+                    text-decoration-color: @color-lighten;
+                    .shadow-outline(@color-lighten4, 1px, 1px, 1px);
+
+                }
+
                 @media @mobile {
                     display: none;
                     flex-basis: 100%;
                 }
-            }
-
-            a {
-                margin: 5px;
-                color: @color-base;
-                font-weight: bold;
             }
                 
             .active {
