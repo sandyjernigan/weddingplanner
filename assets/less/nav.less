@@ -31,18 +31,22 @@
             } // &.responsive
 
             a {
+                margin: 5px;
+                color: @color-base;
+                font-weight: bold;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: @color-lighten3;
+                    .shadow-drop(@color-lighten3, 1px, 1px, 2px);
+                }
+
                 @media @mobile {
                     display: none;
                     flex-basis: 100%;
                 }
             }
 
-            a {
-                margin: 5px;
-                color: @color-base;
-                font-weight: bold;
-            }
-                
             .active {
                 // Action on class active
                 text-decoration-line: overline underline;

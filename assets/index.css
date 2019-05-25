@@ -285,16 +285,22 @@ footer a {
     display: block;
   }
 }
+#headerNav nav .navbar a {
+  margin: 5px;
+  color: #5F3E6C;
+  font-weight: bold;
+}
+#headerNav nav .navbar a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ac88bb;
+  -webkit-filter: drop-shadow(#ac88bb 1px 1px 2px);
+  filter: drop-shadow(#ac88bb 1px 1px 2px);
+}
 @media (max-width: 500px) {
   #headerNav nav .navbar a {
     display: none;
     flex-basis: 100%;
   }
-}
-#headerNav nav .navbar a {
-  margin: 5px;
-  color: #5F3E6C;
-  font-weight: bold;
 }
 #headerNav nav .navbar .active {
   text-decoration-line: overline underline;
