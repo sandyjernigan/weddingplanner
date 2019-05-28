@@ -36,12 +36,9 @@
                 font-weight: bold;
 
                 &:hover {
-                    color: @color-darker;
-                    text-decoration-line: underline;
-                    text-decoration-style: underline;
-                    text-decoration-color: @color-lighten;
-                    .shadow-outline(@color-lighten4, 1px, 1px, 1px);
-
+                    text-decoration: underline;
+                    text-decoration-color: @color-lighten3;
+                    .shadow-drop(@color-lighten3, 1px, 1px, 2px);
                 }
 
                 @media @mobile {
@@ -49,7 +46,6 @@
                     flex-basis: 100%;
                 }
             }
-                
             .active {
                 // Action on class active
                 text-decoration-line: overline underline;

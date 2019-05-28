@@ -291,12 +291,10 @@ footer a {
   font-weight: bold;
 }
 #headerNav nav .navbar a:hover {
-  color: #26192b;
-  text-decoration-line: underline;
-  text-decoration-style: underline;
-  text-decoration-color: #7b518c;
-  -webkit-filter: drop-shadow(#c3a9cd 1px 1px 1px) drop-shadow(-1px -1px 1px #c3a9cd);
-  filter: drop-shadow(#c3a9cd 1px 1px 1px) drop-shadow(-1px -1px 1px #c3a9cd);
+  text-decoration: underline;
+  text-decoration-color: #ac88bb;
+  -webkit-filter: drop-shadow(#ac88bb 1px 1px 2px);
+  filter: drop-shadow(#ac88bb 1px 1px 2px);
 }
 @media (max-width: 500px) {
   #headerNav nav .navbar a {
